@@ -2,114 +2,122 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>I.B.S Enterprises</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>I.B.S Enterprises – Detergent & Essentials</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: sans-serif;
-      background-color: #0A1B30;
-      color: #f1f1f1;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
     }
-    header, section {
-      padding: 2rem;
+
+    header {
+      background-color: #004aad;
+      color: white;
+      padding: 20px;
       text-align: center;
     }
+
+    section {
+      padding: 20px;
+      margin: 10px auto;
+      max-width: 700px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
     h1, h2 {
-      color: #E3B571;
+      margin-bottom: 10px;
     }
+
     .button {
-      background-color: #f7941d;
-      border: none;
-      padding: 0.8rem 1.5rem;
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 10px;
+      background-color: #004aad;
       color: white;
-      font-size: 1rem;
-      cursor: pointer;
-      border-radius: 8px;
-      margin-top: 1rem;
+      text-decoration: none;
+      border-radius: 5px;
     }
-    .product-card {
-      background: #102338;
-      margin: 1rem auto;
-      max-width: 500px;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.4);
-    }
+
     form input, form textarea {
       width: 100%;
-      margin-top: 0.5rem;
-      padding: 0.75rem;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
       border-radius: 5px;
-      border: none;
-      margin-bottom: 1rem;
     }
+
     form button {
-      background-color: #f7941d;
+      padding: 10px 20px;
+      background-color: #004aad;
       color: white;
-      padding: 0.7rem 1.2rem;
       border: none;
-      font-weight: bold;
-      border-radius: 6px;
+      border-radius: 5px;
       cursor: pointer;
+    }
+
+    .explore-input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      padding: 20px;
+      color: #888;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>I.B.S Enterprises</h1>
-    <p>Quality You Can Trust – From Spices to Cleaners</p>
-  </header>
+<header>
+  <h1>I.B.S Enterprises</h1>
+  <p>Boost Cleanliness with Our Detergents</p>
+</header>
 
-  <section>
-    <h2>Our Products</h2>
+<section>
+  <h2>About Us</h2>
+  <p>Elevate hygiene standards with I.B.S. Enterprises' premium detergents, crafted for superior cleaning performance and lasting freshness. We also manufacture spices, sattu, atta, and besan with the same quality commitment.</p>
+  <a href="https://vyaparapp.in/store/ibsenterprises1" class="button" target="_blank">Order for Regular Use</a>
 
-    <div class="product-card">
-      <h3>Detergent Powder</h3>
-      <p>Buy for regular home use or bulk</p>
-      <a href="https://vyaparapp.in/store/ibsenterprises1" class="button">Buy Now</a>
-    </div>
+  <p><strong>Explore Products:</strong></p>
+  <input class="explore-input" type="text" placeholder="Type here to explore... (Detergent, Spices, Sattu, etc.)"/>
+</section>
 
-    <div class="product-card">
-      <h3>Spices</h3>
-      <p>High quality ground spices for home and commercial use</p>
-      <a href="#order-form" class="button">Order Now</a>
-    </div>
+<section>
+  <h2>Bulk Order Inquiry</h2>
+  <form action="https://formspree.io/f/mjkwwgrg" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <input type="text" name="product" placeholder="Product Required" required />
+    <textarea name="requirements" rows="4" placeholder="Tell us your bulk requirement" required></textarea>
+    <button type="submit">Send Bulk Inquiry</button>
+  </form>
+</section>
 
-    <div class="product-card">
-      <h3>Sattu / Atta / Besan</h3>
-      <p>Fresh and hygienically ground</p>
-      <a href="#order-form" class="button">Order Now</a>
-    </div>
-  </section>
+<section>
+  <h2>Join Our Sales Team</h2>
+  <p>Looking to grow your career? Join I.B.S Enterprises as a sales partner and earn with flexibility. We're hiring across India!</p>
+  <form action="https://formspree.io/f/mpwddzkr" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <input type="text" name="city" placeholder="City/State" required />
+    <textarea name="message" rows="3" placeholder="Tell us why you're interested" required></textarea>
+    <button type="submit">Apply Now</button>
+  </form>
+</section>
 
-  <section id="order-form">
-    <h2>Place Your Order</h2>
-    <form action="https://formspree.io/f/mjkwwgrg" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <input type="text" name="phone" placeholder="Phone Number" required />
-      <input type="text" name="product" placeholder="Product Name" required />
-      <textarea name="message" placeholder="Quantity & Details" rows="4" required></textarea>
-      <button type="submit">Send Order</button>
-    </form>
-  </section>
-
-  <section>
-    <h2>Join Our Sales Team</h2>
-    <form action="https://formspree.io/f/mjkwwgrg" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="text" name="phone" placeholder="Phone Number" required />
-      <input type="text" name="location" placeholder="Your City/State" required />
-      <textarea name="why" placeholder="Why do you want to join?" rows="4" required></textarea>
-      <button type="submit">Apply Now</button>
-    </form>
-  </section>
-
-  <footer style="text-align:center; padding: 2rem; font-size: 0.9rem; color: #ccc;">
-    &copy; 2025 I.B.S Enterprises. All rights reserved.
-  </footer>
+<footer>
+  &copy; 2025 I.B.S Enterprises. All rights reserved.
+</footer>
 
 </body>
 </html>
