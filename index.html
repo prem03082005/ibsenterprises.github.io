@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I.B.S Enterprises</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #0A1B30;
+      color: #f1f1f1;
+    }
+    header, section {
+      padding: 2rem;
+      text-align: center;
+    }
+    h1, h2 {
+      color: #E3B571;
+    }
+    .button {
+      background-color: #f7941d;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+    .product-card {
+      background: #102338;
+      margin: 1rem auto;
+      max-width: 500px;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+    form input, form textarea {
+      width: 100%;
+      margin-top: 0.5rem;
+      padding: 0.75rem;
+      border-radius: 5px;
+      border: none;
+      margin-bottom: 1rem;
+    }
+    form button {
+      background-color: #f7941d;
+      color: white;
+      padding: 0.7rem 1.2rem;
+      border: none;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>I.B.S Enterprises</h1>
+    <p>Quality You Can Trust – From Spices to Cleaners</p>
+  </header>
+
+  <section>
+    <h2>Our Products</h2>
+
+    <div class="product-card">
+      <h3>Detergent Powder</h3>
+      <p>Buy for regular home use or bulk</p>
+      <a href="https://vyaparapp.in/store/ibsenterprises1" class="button">Buy Now</a>
+    </div>
+
+    <div class="product-card">
+      <h3>Spices</h3>
+      <p>High quality ground spices for home and commercial use</p>
+      <a href="#order-form" class="button">Order Now</a>
+    </div>
+
+    <div class="product-card">
+      <h3>Sattu / Atta / Besan</h3>
+      <p>Fresh and hygienically ground</p>
+      <a href="#order-form" class="button">Order Now</a>
+    </div>
+  </section>
+
+  <section id="order-form">
+    <h2>Place Your Order</h2>
+    <form action="https://formspree.io/f/mjkwwgrg" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="phone" placeholder="Phone Number" required />
+      <input type="text" name="product" placeholder="Product Name" required />
+      <textarea name="message" placeholder="Quantity & Details" rows="4" required></textarea>
+      <button type="submit">Send Order</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Join Our Sales Team</h2>
+    <form action="https://formspree.io/f/mjkwwgrg" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="text" name="phone" placeholder="Phone Number" required />
+      <input type="text" name="location" placeholder="Your City/State" required />
+      <textarea name="why" placeholder="Why do you want to join?" rows="4" required></textarea>
+      <button type="submit">Apply Now</button>
+    </form>
+  </section>
+
+  <footer style="text-align:center; padding: 2rem; font-size: 0.9rem; color: #ccc;">
+    &copy; 2025 I.B.S Enterprises. All rights reserved.
+  </footer>
+
+</body>
+</html>
